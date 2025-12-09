@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AivoraVision</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+  <!-- Floating Nav -->
+  <header class="glass-nav">
+    <h1 class="logo">AivoraVision</h1>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../team.html">Team</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+  </header>
+
+    <!-- Lottie Player Script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+<style>
+  .lottie-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+</style>
+<!-- Only this wrapper will be centered -->
+<div class="lottie-wrapper">
+  <div id="lottie-animation" style="width:300px; height:300px;"></div>
+</div>
+<script>
+  var animation = lottie.loadAnimation({
+    container: document.getElementById("lottie-animation"),
+    renderer: "svg",
+    loop: true,
+    autoplay: true,
+    path: "animation.json"
+  });
+</script>
+
+  <section class="hero glass">
+    <h2>AivoraVision</h2>
+    <p>Advanced medical imaging diagnostics powered by responsible AI.</p>
+  </section>
+  <section class="section glass">
+    <h3>Overview</h3>
+    <p>
+      AIvoraVision™ brings explainable medical image analysis for hospitals and research institutions.
+    </p>
+  </section>
+
+  <section class="section glass">
+    <h3>Capabilities</h3>
+    <ul>
+      <li>Radiology image segmentation & classification</li>
+      <li>Real-time anomaly detection</li>
+      <li>Explainable AI overlays</li>
+      <li>FHIR / DICOM compliant integrations</li>
+    </ul>
+  </section>
+
+  <footer class="glass-footer">
+    © 2025 Aivora Healthcare — Secure Medical Intelligence
+  </footer>
+</body>
+</html>
